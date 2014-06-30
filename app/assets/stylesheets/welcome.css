@@ -1,0 +1,62 @@
+.fareshare_banner {
+	height: 280px;
+	background-color: #6AB9BA;
+	color: white;
+	text-align: center;
+}
+
+.fareshare_banner h1 {
+	padding-top: 20px;
+	margin: 0;
+}
+
+.fareshare_banner img {
+	padding: 20px;
+}
+
+.how_it_works_banner {
+	overflow: auto;
+	text-align: center
+}
+
+.steps {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.step1, .step2, .step3 {
+	width: 30%;
+	margin: 10px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.footer {
+	color: white;
+	font-size: 14px;
+	text-align: center;
+	background-color: #3C6869;
+	padding: 10px;
+}
+
+.footer ul {
+	list-style: none;
+	display: inline;
+	padding: 0;
+}
+
+.footer_links {
+	margin: 10px 0 10px 0;
+}
+
+.footer ul li {
+	display: inline;
+	padding: 5px;
+	margin: 10px;
+	font-size: 12px;
+}
+
+.footer ul li a {
+	color: white;
+	padding: 3px;
+}
