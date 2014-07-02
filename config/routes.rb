@@ -1,12 +1,17 @@
 Rails.application.routes.draw do
+
+  root 'welcome#index'
+
   get 'signup', to: 'users#new', as: 'signup'
   get 'signin', to: 'sessions#new', as: 'signin'
   delete 'signout', to: 'sessions#destroy', as: 'signout'
 
+  resources :groups do
+    resources :expenses
+  end
   resources :users
-  resources :sessions
+  resources :sessions, only: [:create, :new, :destroy]
 
-  root 'welcome#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
