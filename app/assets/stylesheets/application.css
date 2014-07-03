@@ -26,3 +26,12 @@ a {
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
 }
+
+.notice_container {
+	background-color: #3C6869;
+	color: gray;
+}
+
+.notice_container p {
+	margin: 0;
+}

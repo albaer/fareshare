@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
-	has_many :created_groups, foreign_key: :creator_id, class_name: "Group" #working
-	has_many :accounts #working
-	has_many :groups, through: :accounts #working
+	has_many :created_groups, foreign_key: :creator_id, class_name: "Group"
+	has_many :accounts
+	has_many :groups, through: :accounts
 
 	has_secure_password
 

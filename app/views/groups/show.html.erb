@@ -1,14 +1,31 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @group.name %>
-</p>
+
+<h2>
+<%= @group.name %>
+</h2>
 
 <p>
   <strong>Creator:</strong>
-  <%= @group.creator_id %>
+  <%= @group.creator.first_name %>
 </p>
+
+<h3>Group Expenses</h3>
+<table>
+	<thead>
+		<th>Expense</th>
+		<% @group.accounts.each do |account| %>
+			<th><%= account.user.first_name %></th>
+		<% end %>
+	</thead>
+	<% @groups.expenses.each do |expense| %>
+		<tr>
+			<td><%= expense.title %></td>
+			<% expense.accounts.each do |account| %>
+				<td><%= account. </td>
+			<% end %>
+		</tr>
+	<% end %>
+</table>
 
 <%= link_to 'Edit', edit_group_path(@group) %> |
 <%= link_to 'Back', groups_path %>
